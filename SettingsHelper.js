@@ -93,6 +93,7 @@ module.exports = function () {
           catch(e) {
             console.log(`- Unable to parse '${output[setting.local]}'`);
             console.log(`- Please check your syntax. Reverting to default.`);
+	    console.log(e);
           }
           console.log(`- Done.`);
         }
