@@ -85,7 +85,8 @@ module.exports = function () {
       // Make sure these settings are properly formatted to JSON
       let jsonSettings = ['authentication', 'customServer'];
       if(jsonSettings.includes(setting.local) && output[setting.local]) {
-	console.log(typeof output[setting.local])
+	console.log(typeof output[setting.local]);
+        console.log(JSON.stringfy(output[setting.local]);
         if(typeof output[setting.local] !== "[object Object]") {
           console.log(`${setting.local}/${setting.env} must be a JSON object. Attempting to convert it for you.`);
           try {
