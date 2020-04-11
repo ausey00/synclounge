@@ -1,6 +1,6 @@
 
 const args = require('args-parser')(process.argv);
-console.log(JSON.stringify(process.env)
+console.log(JSON.stringify(process.env))
 const settings = require('./settings.json');
 
 module.exports = function () {
