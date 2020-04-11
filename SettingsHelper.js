@@ -79,6 +79,7 @@ module.exports = function () {
     console.log(`Args: '${args[setting.env]}'; '${args[setting.local]}'`);
     console.log(`ENV: '${process.env[setting.env]}'; '${process.env[setting.local]}'`);
     console.log(`Settings: '${settings[setting.local]}'; '${setting.default}'`);
+    console.log(JSON.stringify(process.env[setting.env]))
     output[setting.local] = args[setting.env] || args[setting.local] || process.env[setting.env] || process.env[setting.local] || settings[setting.env] || settings[setting.local] || setting.default;
 
     console.log(`'${output[setting.local]}'`)
